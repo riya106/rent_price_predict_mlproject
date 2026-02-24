@@ -9,6 +9,11 @@ A Machine Learning project that predicts house rent prices based on user inputs 
 - Flask
 - HTML/CSS
 
+![Homepage](rent1.png)
+
+
+
+
 ##  Features
 - Rent prediction using regression model
 - Cleaned and preprocessed dataset
