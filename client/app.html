@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rent Price Prediction</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="container">
+    <h1> Rent Price Prediction</h1>
+
+    <!-- Area Slider -->
+    <div class="form-group">
+        <label>Area (sqft): <span id="areaValue">1000</span></label>
+        <input type="range" id="area" min="300" max="5000" step="50" value="1000">
+    </div>
+
+    <!-- Beds Dropdown -->
+    <div class="form-group">
+        <label>Beds</label>
+        <select id="beds">
+            <option value="1">1 BHK</option>
+            <option value="2">2 BHK</option>
+            <option value="3">3 BHK</option>
+            <option value="4">4 BHK</option>
+            <option value="5">5 BHK</option>
+        </select>
+    </div>
+
+    <!-- Bathrooms Dropdown -->
+    <div class="form-group">
+        <label>Bathrooms</label>
+        <select id="bathrooms">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+
+    <!-- Furnishing -->
+    <div class="form-group">
+        <label>Furnishing</label>
+        <select id="furnishing">
+            <option value="0">Unfurnished</option>
+            <option value="1">Semi-Furnished</option>
+            <option value="2">Fully Furnished</option>
+        </select>
+    </div>
+
+    <!-- City -->
+    <div class="form-group">
+        <label>City</label>
+        <select id="city"></select>
+    </div>
+
+    <button onclick="predictRent()">Predict Rent</button>
+
+    <h2 id="result">Estimated Rent: ₹ --</h2>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
